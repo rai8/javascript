@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>My first JavaScript</h1>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML=Date()"
+    >
+      Click me to display date and time
+    </button>
+
+    <p id="demo"></p>
+    <p id="start">
+      <button type="button" onclick="myFunction()">Try it out</button>
+    </p>
+    <script>
+      function myFunction() {
+        document.getElementById("start").innerHTML = "Paragraph changed";
+      }
+    </script>
+    <script>
+      //window.alert(5 + 6);
+    </script>
+    <p id="operations"></p>
+    <script>
+      var a, b, c;
+      a = 5;
+      b = 6;
+      c = a + b;
+      document.getElementById("operations").innerHTML = c;
+    </script>
+    <p id="cars"></p>
+    <script>
+      //declaring a variable and assigning a value
+      var carName = "Volvo";
+      document.getElementById("cars").innerHTML = carName;
+    </script>
+    <p id="multiply"></p>
+    <script>
+      function myProduct(p1, p2) {
+        return p1 * p2;
+      }
+      document.getElementById("multiply").innerHTML = myProduct(4, 5);
+    </script>
+    <p id="method"></p>
+    <script>
+      var person={
+          firstName= "Rhytonne",
+          lastName="Brite",
+          id:35611752,
+          fullName: function(){
+              return this.firstName +" " +this.lastName;
+            }
+
+          };
+          document.getElementById("method").innerHTML= person.fullName();
+    </script>
+  </body>
+</html>
