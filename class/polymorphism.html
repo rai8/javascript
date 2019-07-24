@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <h1>Lesson on polymorphism:</h1>
+</head>
+<script>
+  class Animal {
+    constructor(name) {
+      this.name = name;
+    }
+    makeSound() {
+      console.log("Generic animal sound");
+    }
+  }
+  class Dog extends Animal {
+    constructor(name) {
+      super(name);
+    }
+    makeSound() {
+      super.makeSound();
+      console.log("Woof !!! Woof !!!");
+    }
+  }
+  const a1 = new Animal("monkey");
+  const a2 = new Dog("Chimanzi");
+  a1.makeSound();
+  a2.makeSound();
+</script>
+<body>
+  <p>
+    Polymorphism is the act of redifining a method inside a derived child class
+    of a parent
+  </p>
+  Press ctrl+ shift + I; to get to the developers console terminal
+</body>

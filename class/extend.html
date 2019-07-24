@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <h1>Lesson on class inheritance:</h1>
+</head>
+<script>
+  class Person {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+    describe() {
+      console.log("I am " + this.name + " and I am " + this.age + " years old");
+    }
+  }
+  class Programmer extends Person {
+    constructor(name, age, yearsOfExperience) {
+      super(name, age);
+      this.yearsOfExperience = yearsOfExperience;
+    }
+    code() {
+      console.log(`${this.name} is coding`);
+    }
+  }
+  let person1 = new Person("Jeff", 40);
+  let programmer1 = new Programmer("Biko", 40, 12);
+  programmer1.code();
+  programmer1.describe();
+</script>
+<body>
+  <p>
+    through inheritance one is able to obtain the functions of the parent class
+  </p>
+  Press ctrl+ shift + I; to get to the developers console terminal
+</body>
