@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <h1>MY first lesson on classes:</h1>
+</head>
+<script>
+  class Rectangle {
+    constructor(length, width) {
+      this.length = length;
+      this.width = width;
+    }
+    getArea() {
+      return this.length * this.width;
+    }
+  }
+  let rectangle1 = new Rectangle(5, 7);
+  let rectangle2 = new Rectangle(17, 84);
+  console.log(rectangle1.getArea());
+  console.log(rectangle2.getArea());
+</script>
+<body>
+  Press ctrl+ shift + I; to get to the developers console terminal
+</body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <h1>Lesson on statics:</h1>
+</head>
+<script>
+  class Square {
+    constructor(length) {
+      this.length = length;
+      this.width = length;
+    }
+    static equals(a, b) {
+      return a.width * a.length === b.width * b.length;
+    }
+  }
+  let sqaure1 = new Square(4);
+  let sqaure2 = new Square(4);
+  console.log(Square.equals(sqaure1, sqaure2)); // output will be true since they both have the sama length
+</script>
+<body>
+  <p>
+    Static- defines methods even without having the objects instance
+  </p>
+  Press ctrl+ shift + I; to get to the developers console terminal
+</body>

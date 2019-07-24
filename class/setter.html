@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <h1>MY first lesson on classes:</h1>
+</head>
+<script>
+  class Square {
+    constructor(length) {
+      this.length = length;
+      this.width = length;
+    }
+    get area() {
+      return this.length * this.width;
+    }
+
+    set area(area) {
+      this.width = Math.sqrt(area);
+      this.length = this.width;
+    }
+  }
+  let square1 = new Square(16);
+  square1.area = 169;
+  console.log(square1.width);
+  console.log(square1.length);
+</script>
+<body>
+  <p>
+    Setters are most often used in conjunction with getters to create a type of
+    pseudo-property. It is not possible to simultaneously have a setter on a
+    property that holds an actual value. Note the following when working with
+    the set syntax: It can have an identifier which is either a number or a
+    string; It must have exactly one parameter
+  </p>
+  Press ctrl+ shift + I; to get to the developers console terminal
+</body>

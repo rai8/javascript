@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <h1>MY first lesson on classes:</h1>
+</head>
+<script>
+  class Square {
+    constructor(length) {
+      this.length = length;
+      this.width = length;
+    }
+    get area() {
+      return this.length * this.width;
+    }
+  }
+  let square1 = new Square(16);
+  console.log(square1.area);
+</script>
+<body>
+  <p>
+    Getters are used to define methods of a class, which will then be used as
+    properties The good thing about using the get keyword is that you dont have
+    to use the () when calling out the method. This is because it will behave as
+    a property
+  </p>
+  Press ctrl+ shift + I; to get to the developers console terminal
+</body>
