@@ -1,0 +1,2 @@
+/* hoisting in a lay mans language means to list up 
+callable objects go into an execution stack */
