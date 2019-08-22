@@ -8,7 +8,7 @@ var car = {
     pristons: [{ maker: "bmw" }, { maker: "bmw2" }]
   },
   drive: function() {
-    return "drive";
+    return "drive in objects";
   }
 };
 var array = [
@@ -17,7 +17,9 @@ var array = [
   ["embedd", 200],
   { car: "ford" },
   function() {
-    return "drive";
+    return "drive in array";
   }
 ];
 console.log(car.engine.pristons[0].maker); //Computer member access
+console.log(car.drive());
+console.log(array[4]());
